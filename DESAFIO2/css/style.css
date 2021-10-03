@@ -44,6 +44,7 @@ span#icone:hover{
     position: absolute;
     top: 160px;
     cursor: pointer;
+    transition: 2s;
 }
 
 /*formulario*/
@@ -106,6 +107,7 @@ input{
     color: white;
     border-radius: 7px;
     cursor: pointer;
+    transition: 1.5s;
 }
 
 
