@@ -1,0 +1,58 @@
+main{
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+}
+div{
+    border: 1px solid black;
+    background-color:gold;
+    width: 100%;
+    height: 22vh;
+    margin-bottom: 10px;
+}
+#verde{
+    width: 49%;
+    height: 18vh;
+    background-color: greenyellow;
+}
+.flex-espaco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#um{
+    height: 15vh;
+    margin-bottom: 5px;
+}
+#dois{
+    height: 40vh;
+}
+#tres{
+    display: flex;
+    
+}
+#quatro{
+    width: 50%;
+    border: 1px solid black;
+}
+
+/*Para outras midias*/
+
+
+@media screen and (max-width:700px) {
+    body{
+        background-color: black ;
+    }
+    #tres{
+        display: block;
+    }
+    #quatro{
+        width: 100%;
+    }
+    #verde{
+        width: 100%;
+    }
+    .flex-espaco{
+        display: block;
+    }
+}

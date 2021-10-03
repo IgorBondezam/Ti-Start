@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    font-size: 100%;
+    --cor-border-geral: #CFD8DC;
+    --cor-border-fonte: #434f55;
+    --font-padrao: Verdana, ariel;
+    --font-cor-titulo:#E53935;
+}
+header, main, footer{
+    width: 80%;
+    margin: auto;
+
+}
+header#top{
+    border-bottom: 1px solid var(--cor-border-geral);
+    height: 60px;
+}
+.flex{
+    display: flex;
+}
+h1, nav{
+    width: 50%;
+}
+.material-icons{
+    margin-right: 5px;
+    font-size: 40px;
+}
+h1{
+    color: var(--font-cor-titulo);
+    font-family:'Gemunu Libre', sans-serif;
+    font-size: clamp( 1.8rem ,3.2vh, 4rem );
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font-padrao);
+    color: var(#434f55);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+a.go:hover{
+    background-color: var(--font-cor-titulo);
+    color:white;
+    transition: 2s;
+    
+}
+nav ul{
+    width: 100%;
+    justify-content: flex-end;
+}
+nav ul li{
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+section#section-card{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section#section-card div.card{
+    width: 50vh;
+    height: auto;
+    border: 1px solid var(--cor-border-geral);
+    flex-grow: 2;
+}
+section#section-card div.card figure.card-img-pizza img.img-pizza{
+    width: 100%;
+    padding: 2px;
+
+}
+img.img-pizza{
+    width: 100%;
+}
+form.formTamanhoPizza{
+    align-items: center;
+    justify-content: center;
+}
+section div form.formTamanhoPizza label{
+    width: 30px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    cursor:pointer;
+}
+h2.subtitulo{
+    text-align: center;
+    padding: 7px;
+}
+.aling-center-xy{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    background-color: #E53935;
+    color: white;
+    margin: 2vh auto;
+    width: 15vw;
+    height: 7vh;
+}
+
+
+
+footer{
+    height: 60px;
+    border-top: var(--cor-border-geral);
+    margin-top: 40px;
+    background-image: linear-gradient(#E53935, red);
+}
+h2#anun{
+    padding-top: 16px;
+    padding-left: 100px;
+    width: 70%;
+    color: cornsilk;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+}
+div#anuncio{
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+h3, h4{
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    padding-top: 10px;
+    padding-right: 65px ;
+}
+h4{
+    padding-right: 20px;
+}
+@media screen and (max-width:700px){
+    h2#anun{
+        padding-top: 12px;
+        font-size: 20px;
+        width: 50%;
+        padding-left: 80px;
+    }
+    div#anuncio{
+        width: 50%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+}
