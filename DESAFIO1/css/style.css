@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header#cabecalho{
+    width: 100%;
+    height: 40px;
+    background-color: #212121;
+
+}
+
+h1#logo{
+    color: white;
+    font-family: helvetica;
+    font-size: 100%;
+    padding: 10px;
+    padding-left: 13%;
+}
+div#botao1{
+    margin-right: 2%;
+    position: absolute;
+    right: 45px;
+    top: 1%;
+    width: 100px;
+    height: 25px;
+    background-color: #212121;
+    border-radius: 30px;
+    font-family: Helvetica;
+    color: white;
+}
+
+#botao1{
+    padding-top: 3px;
+    padding-left: 29px ;
+}
+div#botao2{
+    margin-right: 4%;
+    position: absolute;
+    right: 120px;
+    top: 1%;
+    width: 100px;
+    height: 25px;
+    background-color: #212121;
+    font-family: Helvetica;
+    color: white;
+
+}
+div#botao2:hover{
+    margin-right: 4%;
+    position: absolute;
+    right: 120px;
+    top: 1%;
+    width: 100px;
+    height: 25px;
+    background-color:red;
+    font-family: Helvetica;
+    color: white;
+
+}
+#botao2{
+    padding-top: 3px;
+    padding-left: 22px ;
+}
+
+
+div#botao3{
+    margin-right: 6%;
+    position: absolute;
+    right: 200px;
+    top: 1%;
+    width: 100px;
+    height: 25px;
+    background-color: #F9A825;
+    border-radius: 30px;
+    font-family: Helvetica;
+    color: white;
+
+}
+#botao3{
+    padding-top: 3px;
+    padding-left: 29px ;
+}
+
+
+
+main{
+    width: 80%;
+    margin-top: 7vh;
+    margin-left: 10%;
+    height: auto;
+
+}
+h3#texto{
+    margin-top: 11vh;
+    margin-left: 5vh;
+    width: 30vw;
+        /*Traço pontilhado*/
+    padding-right: 30px;
+    border-right: 2px dotted black;
+    padding-top: 8vh;
+    padding-bottom: 80px;
+
+}
+.email{
+
+    height: 45px;
+    width: 22vw;
+    margin-left: 20%;
+
+}
+form#formu{
+    margin-top: 23vh;
+}
+
+
+
+footer{
+
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: #212121;
+    /* Centralizar escrita*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+       /*escrita*/
+ h2{
+    color: white;
+    font-family: helvetica;
+ }
+
+        /*centralizar flex da div*/
+.flex{
+    margin-left: 8vw ;
+    display: flex;
+}
+
+
+@media screen and (max-width:800px){
+    main{
+        width: 100%;
+        margin-left: auto;
+    } 
+    h3#texto{
+        margin-left: 1vh;
+        font-size: 14px;
+    }
+    h1#logo{
+        padding-left: 10%;
+    }
+    div#botao1{
+    right: 0px;
+    }
+    div#botao2, div#botao2:hover{
+    right: 80px;
+    }
+    div#botao3{
+    right: 173px;
+    }
+    .email{
+        width: 30vw;
+    }
+
+}
